@@ -1,0 +1,12 @@
+---
+title: "Simple Regression Analysis"
+output: html_document
+name: Timothy Park
+---
+
+## Abstract
+## Introduction
+## Data
+## Methodology
+## Results
+## Conclusions
