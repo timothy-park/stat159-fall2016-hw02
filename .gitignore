@@ -1,4 +1,5 @@
 *.DS_Store
 *.RData
+!data/regression.RData
 *.Rhistory
 *.Rapp.history
