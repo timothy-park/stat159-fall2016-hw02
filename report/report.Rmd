@@ -5,8 +5,31 @@ name: Timothy Park
 ---
 
 ## Abstract
+Having learned the basic tools used in workflow reproducibility, the next step is to start applying the computational toolkit and R programming to reproduce a simple regression analysis. This report will replicate the regression analysis performed in Chapter 3 (Linear Regression) of the textbook, "An Introduction to Statistical Learning". 
+
 ## Introduction
+This analysis involves fitting a linear regression model to predict Sales onto a p
+
 ## Data
 ## Methodology
+
+
+Coefficients| Estimate | Std. Error | t-statistic | p-value
+------------|----------|------------|-------------|---------
+Intercept   | 7.0325   | 0.4578     | 15.36       | <0.0001
+TV          | 0.0475   | 0.0027     | 17.67       | <0.0001
+
+
+Quantity               | Value
+-----------------------|-------
+Residual Standard Error| 3.259
+R-squared              | 0.612
+F-statistic            | 312.1
+
+![](images/histogram-sales.png)
+![](images/histogram-tv.png)
+![](images/scatterplot-tv-sales.png)
+
+
 ## Results
 ## Conclusions
