@@ -11,16 +11,15 @@ report.pdf: report/report.Rmd
 
 # need to use advertising.csv in the makefile?
 regression.RData: code/regression-script.R
-	R CMD BATCH code/regression-script.R data/regression.RData
+	Rscript code/regression-script.R
 
 # need to use advertising.csv in the makefile?
 # how to get rid of commands in eda-output.txt?
 eda-output.txt: code/eda-script.R
-	R CMD BATCH code/eda-script.R data/eda-output.txt
+	Rscript code/eda-script.R
 
 data: 
-	Rscript -e 'download.file(url = $(advertising_url), 
-		destfile = "data/Advertising.csv")'
+	curl -o data/Advertising.csv $(advertising_url) 
 
 # do we also clean eda-output.txt and regression.RData
 clean: 
