@@ -6,7 +6,15 @@ png('images/histogram-tv.png')
 hist(TV)
 dev.off()
 
+pdf('images/histogram-tv.pdf')
+hist(TV)
+dev.off()
+
 png('images/histogram-sales.png')
+hist(Sales)
+dev.off()
+
+pdf('images/histogram-sales.pdf')
 hist(Sales)
 dev.off()
 

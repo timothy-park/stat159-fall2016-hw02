@@ -11,3 +11,8 @@ abline(lm.fit, lwd = 2)
 dev.off()
 
 
+pdf('images/scatterplot-tv-sales.pdf')
+plot(TV, Sales, col = 'red', pch = 20)
+title(main = 'Advertising Scatterplot: Sales ~ TV')
+abline(lm.fit, lwd = 2)
+dev.off()
