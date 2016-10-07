@@ -6,6 +6,7 @@ summary(lm.fit)
 
 png('images/scatterplot-tv-sales.png')
 plot(TV, Sales, col = 'red', pch = 20)
+title(main = 'Advertising Scatterplot: Sales ~ TV')
 abline(lm.fit, lwd = 2)
 dev.off()
 
