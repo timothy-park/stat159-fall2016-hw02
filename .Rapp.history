@@ -1,0 +1,8 @@
+load("/Users/timothypark/Desktop/stat159-fall2016-hw02/data/regression.RData")
+load("/Users/timothypark/Desktop/stat159-fall2016-hw02/regression.RData")
+load("/Users/timothypark/Desktop/stat159-fall2016-hw02/regression.RData")
+load("/Users/timothypark/Desktop/timo.RData")
+load("/Users/timothypark/Desktop/timo.RData")
+load("/Users/timothypark/Desktop/timo.RData")
+load("/Users/timothypark/Desktop/timo.RData")
+lm.fit
