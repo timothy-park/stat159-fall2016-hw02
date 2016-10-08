@@ -7,7 +7,12 @@ summary(lm.fit)
 png('images/scatterplot-tv-sales.png')
 plot(TV, Sales, col = 'red', pch = 20)
 title(main = 'Advertising Scatterplot: Sales ~ TV')
-abline(lm.fit, lwd = 2)
+abline(lm.fit, lwd = 3)
+line <- lm.fit[[1]][2]*TV + lm.fit[[1]][1]
+for (i in 1:200) {
+  segments(TV[i], Sales[i],
+           TV[i], line[i], lwd = 1)
+}
 dev.off()
 
 
