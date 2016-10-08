@@ -3,6 +3,7 @@ title: "Simple Regression Analysis"
 author: "Timothy Park"
 date: "Oct 07,2016"
 geometry: "margin = 2cm"
+output: pdf_document
 ---
 ## Abstract
 

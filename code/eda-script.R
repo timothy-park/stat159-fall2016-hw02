@@ -1,4 +1,5 @@
-advertising <- read.csv(file = 'data/Advertising.csv')
+args = commandArgs(trailingOnly = TRUE)
+advertising <- read.csv(file = args[1])
 attach(advertising)
 summary(advertising)
 

@@ -4,23 +4,17 @@ advertising_url = "http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv"
 
 all: eda-output.txt regression.RData report.pdf
 
-# how to use the RData and png in makefile? regression.RData scatterplot-tv-sales.png
-report.pdf: report/report.Rmd
+report.pdf: report/report.Rmd data/regression.RData images/scatterplot-tv-sales.png
 	pandoc report/report.Rmd -s -o report/report.pdf
 
+regression.RData: code/regression-script.R data/Advertising.csv
+	Rscript code/regression-script.R data/Advertising.csv
 
-# need to use advertising.csv in the makefile?
-regression.RData: code/regression-script.R
-	Rscript code/regression-script.R
-
-# need to use advertising.csv in the makefile?
-# how to get rid of commands in eda-output.txt?
-eda-output.txt: code/eda-script.R
-	Rscript code/eda-script.R
+eda-output.txt: code/eda-script.R data/Advertising.csv
+	Rscript code/eda-script.R data/Advertising.csv
 
 data: 
 	curl -o data/Advertising.csv $(advertising_url) 
 
-# do we also clean eda-output.txt and regression.RData
 clean: 
 	rm -f report/report.pdf
