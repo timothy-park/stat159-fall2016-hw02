@@ -20,7 +20,7 @@ The Advertising data set consists of Sales (in thousands of units) in 200 differ
 ## Methodology
 
 We use the following linear model to evaluate the association between Sales and TV advertising: 
-                        Sales = $\beta_0$ + $\beta_1$TV
+$$Sales = \beta_0 + \beta_1TV$$
                          
 Using the least squares criterion, estimates of the beta coefficients are calculated to form a fitted regression line from the given n = 200 observations.
 
